@@ -1,7 +1,7 @@
 # ArCIE
 ECE202 Sophomore Design Project | Arduino Controlled Independent Ecosystem
 
-# EDIT LOG: 
+# EDIT LOG
 -2/23/24 by Alex Benson (inital code and objectives) 
 
 # OBJECTIVES
