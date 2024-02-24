@@ -81,10 +81,10 @@ void loop() {
 // ------------FUNCTIONS------------
 //  READ SENSOR FUNCTION returns the analog soil moisture measurement
 int readSensor() {
-	digitalWrite(sensorPower, HIGH);	// Turn the sensor ON
-	delay(10);							// Allow power to settle
-	int val = analogRead(sensorPin);	// Read the analog value form sensor
-	digitalWrite(sensorPower, LOW);		// Turn the sensor OFF
-	return val;							// Return analog moisture value
+	digitalWrite(sensorPower, HIGH);	// turn the sensor ON
+	delay(10);				// allow power to settle
+	int val = analogRead(sensorPin);	// read the analog value form sensor
+	digitalWrite(sensorPower, LOW);		// turn the sensor OFF
+	return val;				// return analog moisture value
 }
 // ---------------------------------
