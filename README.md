@@ -2,7 +2,7 @@
 ECE202 Sophomore Design Project | Arduino Controlled Independent Ecosystem
 
 # EDIT LOG
--2/23/24 by Alex Benson (inital code and objectives) 
+- 2/23/24 by Alex Benson (inital code and objectives) 
 
 # OBJECTIVES
 - Initial Testing of current code to make sure readings are accurate and that the loop is able to execute with both the temp/humidity AND soil moisture content statements
