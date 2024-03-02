@@ -37,7 +37,7 @@ void loop() {
   // VARIABLES
   unsigned long currentMillis = millis(); // get current time in milliseconds
   int moisture = -1; // initializes moisture vairables
-  unsigned long soilInterval = 8 * 60 * 60 * 1000; // takes reading every 8 hours, use 1000 for testing.
+  unsigned long soilInterval = 1000; // takes reading every 8 hours, use 1000 for testing. 8 * 60 * 60 * 
   static unsigned long lastSoilTime = 0;
 
   // ---------SOIL---------
@@ -61,30 +61,25 @@ void loop() {
 
   // ----------HUMIDITY-&-TEMP----------
   int chk = DHT.read11(DHT11_PIN);
-  static unsigned long lastTempTime = 0;
-
-  if (currentMillis - lastTempTime >= (60 * 1000)) {
-    lastTempTime = currentMillis;
-
-    float temperature = DHT.temperature;
-    temperature = (temperature * (9/5)) + 32; // converts to F
-    float humidity = DHT.humidity;
-    Serial.print("Temperature = ");
-    Serial.println(temperature);
-    Serial.print("Humidity = ");
-    Serial.println(humidity);
-    Serial.println(" %");
+  float temperature = DHT.temperature;
+  temperature = (temperature * (9/5)) + 32;
+  float humidity = DHT.humidity;
+  Serial.print("Temperature = ");
+  Serial.println(temperature);
+  Serial.print("Humidity = ");
+  Serial.println(humidity);
+  delay(1000);
   }
   //------------------------------------
-} // end void setup look
+  // end void setup look
 
 // ------------FUNCTIONS------------
 //  READ SENSOR FUNCTION returns the analog soil moisture measurement
 int readSensor() {
-	digitalWrite(sensorPower, HIGH);	// turn the sensor ON
-	delay(10);				// allow power to settle
+	digitalWrite(sensorPower, HIGH);  // turn the sensor ON
+	delay(10);                        // allow power to settle
 	int val = analogRead(sensorPin);	// read the analog value form sensor
 	digitalWrite(sensorPower, LOW);		// turn the sensor OFF
-	return val;				// return analog moisture value
+	return val;							          // return analog moisture value
 }
 // ---------------------------------
