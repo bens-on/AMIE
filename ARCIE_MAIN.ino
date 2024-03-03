@@ -2,9 +2,9 @@
   ARDUINO CONTROLLED INDEPENDENT ECOSYSTEM
 
   CODE: Reads soil moisture levels, humiidty levels, temperature in F
-  OUTPUT: Currently routed to serial monitor, will be displayed on LCD module
+  OUTPUT: Currently routed to serial monitor, will be displayed on LCD module in separate file
 
-  TEAM 8 MEMBERS: Alex Benson, Isa Fontana, Macy Green
+  TEAM #8 MEMBERS: Alex Benson, Isa Fontana, Macy Green
 */
 
 // -------------------------------------
