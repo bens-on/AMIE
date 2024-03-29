@@ -14,3 +14,4 @@ ECE202 Sophomore Design Project | Arduino Monitored Independent Ecosystem
 - COMPLETE: Add the ability to display values on the LCD screen, switching from humidity/temp to soil moisture readings every 10 seconds or so.
 - COMPLETED: Grow light added as outside hardware, not included in code.
 - COMPLETED: Transfer code to I2C format for minimal hardware connections.
+- IP: Verification of soil testing interval. Important as too many tests can corrode soil moisture monitor.
