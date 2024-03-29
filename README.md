@@ -10,5 +10,7 @@ ECE202 Sophomore Design Project | Arduino Monitored Independent Ecosystem
 
 # OBJECTIVES
 - COMPLETE: Initial Testing of current code to make sure readings are accurate and that the loop is able to execute with both the temp/humidity AND soil moisture content statements
-- DELAYED: Add RGB LED control to simulate daylight cycle. This can be done with BLUE and GREEN lights for a period of 12 hours.
+- CANCELLED: Add RGB LED control to simulate daylight cycle. This can be done with BLUE and GREEN lights for a period of 12 hours.
 - COMPLETE: Add the ability to display values on the LCD screen, switching from humidity/temp to soil moisture readings every 10 seconds or so.
+- COMPLETED: Grow light added as outside hardware, not included in code.
+- COMPLETED: Transfer code to I2C format for minimal hardware connections.
