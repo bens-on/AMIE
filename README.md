@@ -15,3 +15,4 @@ ECE202 Sophomore Design Project | Arduino Monitored Independent Ecosystem
 - COMPLETED: Grow light added as outside hardware, not included in code.
 - COMPLETED: Transfer code to I2C format for minimal hardware connections.
 - IP: Verification of soil testing interval. Important as too many tests can corrode soil moisture monitor.
+- IP: Optional soil measurement method DIFFERENT from prev. Read DRY soil analog out, use result to tell user when the soil is back to its dry point.
